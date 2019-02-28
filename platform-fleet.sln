@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26124.0
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{865BD50A-5FED-4E4B-A8E5-F3F4D6503F69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{527FEA6C-5370-468C-97EC-3A86D0965117}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fleet.Api", "src\Host\Fleet.Api\Fleet.Api.csproj", "{D2A7E1B1-8F85-4E24-AB68-55DF79642B20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2A7E1B1-8F85-4E24-AB68-55DF79642B20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2A7E1B1-8F85-4E24-AB68-55DF79642B20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2A7E1B1-8F85-4E24-AB68-55DF79642B20}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D2A7E1B1-8F85-4E24-AB68-55DF79642B20}.Debug|x64.Build.0 = Debug|Any CPU
+		{D2A7E1B1-8F85-4E24-AB68-55DF79642B20}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D2A7E1B1-8F85-4E24-AB68-55DF79642B20}.Debug|x86.Build.0 = Debug|Any CPU
+		{D2A7E1B1-8F85-4E24-AB68-55DF79642B20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2A7E1B1-8F85-4E24-AB68-55DF79642B20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2A7E1B1-8F85-4E24-AB68-55DF79642B20}.Release|x64.ActiveCfg = Release|Any CPU
+		{D2A7E1B1-8F85-4E24-AB68-55DF79642B20}.Release|x64.Build.0 = Release|Any CPU
+		{D2A7E1B1-8F85-4E24-AB68-55DF79642B20}.Release|x86.ActiveCfg = Release|Any CPU
+		{D2A7E1B1-8F85-4E24-AB68-55DF79642B20}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{527FEA6C-5370-468C-97EC-3A86D0965117} = {865BD50A-5FED-4E4B-A8E5-F3F4D6503F69}
+		{D2A7E1B1-8F85-4E24-AB68-55DF79642B20} = {527FEA6C-5370-468C-97EC-3A86D0965117}
+	EndGlobalSection
+EndGlobal
