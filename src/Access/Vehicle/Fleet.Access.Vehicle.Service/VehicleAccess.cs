@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using AutoMapper;
 using Fleet.Access.Vehicle.Interface;
 using Fleet.Access.Vehicle.Service.Entities;
@@ -28,9 +25,9 @@ namespace Fleet.Access.Vehicle.Service
             this.context = context;
         }
 
-        public async Task AddAsync(VehicleActivity activity)
+        public async Task AddAsync(AddVehicleActivityRequest request)
         {
-            var mapped = Mapper.Map<VehicleActivityStorage>(activity);
+            var mapped = Mapper.Map<VehicleActivityStorage>(request.Activity);
             await context.VehicleActivities.AddAsync(mapped);
             await context.SaveChangesAsync();
         }

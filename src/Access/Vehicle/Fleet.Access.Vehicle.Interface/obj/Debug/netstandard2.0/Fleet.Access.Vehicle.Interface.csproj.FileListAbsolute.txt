@@ -1,9 +1,0 @@
-C:\Users\chacohead\Documents\GitHub\platform-fleet\src\Access\Vehicle\Fleet.Access.Vehicle.Interface\bin\Debug\netstandard2.0\Fleet.Access.Vehicle.Interface.deps.json
-C:\Users\chacohead\Documents\GitHub\platform-fleet\src\Access\Vehicle\Fleet.Access.Vehicle.Interface\bin\Debug\netstandard2.0\Fleet.Access.Vehicle.Interface.dll
-C:\Users\chacohead\Documents\GitHub\platform-fleet\src\Access\Vehicle\Fleet.Access.Vehicle.Interface\bin\Debug\netstandard2.0\Fleet.Access.Vehicle.Interface.pdb
-C:\Users\chacohead\Documents\GitHub\platform-fleet\src\Access\Vehicle\Fleet.Access.Vehicle.Interface\obj\Debug\netstandard2.0\Fleet.Access.Vehicle.Interface.csprojAssemblyReference.cache
-C:\Users\chacohead\Documents\GitHub\platform-fleet\src\Access\Vehicle\Fleet.Access.Vehicle.Interface\obj\Debug\netstandard2.0\Fleet.Access.Vehicle.Interface.csproj.CoreCompileInputs.cache
-C:\Users\chacohead\Documents\GitHub\platform-fleet\src\Access\Vehicle\Fleet.Access.Vehicle.Interface\obj\Debug\netstandard2.0\Fleet.Access.Vehicle.Interface.AssemblyInfoInputs.cache
-C:\Users\chacohead\Documents\GitHub\platform-fleet\src\Access\Vehicle\Fleet.Access.Vehicle.Interface\obj\Debug\netstandard2.0\Fleet.Access.Vehicle.Interface.AssemblyInfo.cs
-C:\Users\chacohead\Documents\GitHub\platform-fleet\src\Access\Vehicle\Fleet.Access.Vehicle.Interface\obj\Debug\netstandard2.0\Fleet.Access.Vehicle.Interface.dll
-C:\Users\chacohead\Documents\GitHub\platform-fleet\src\Access\Vehicle\Fleet.Access.Vehicle.Interface\obj\Debug\netstandard2.0\Fleet.Access.Vehicle.Interface.pdb
