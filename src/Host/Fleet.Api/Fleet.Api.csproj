@@ -11,4 +11,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Access\Vehicle\Fleet.Access.Vehicle.Interface\Fleet.Access.Vehicle.Interface.csproj" />
+    <ProjectReference Include="..\..\Access\Vehicle\Fleet.Access.Vehicle.Service\Fleet.Access.Vehicle.Service.csproj" />
+    <ProjectReference Include="..\..\Contract\Fleet.Contract.API\Fleet.Contract.API.csproj" />
+  </ItemGroup>
+
 </Project>

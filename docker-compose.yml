@@ -1,8 +1,4 @@
-version: '3.4'
-
-networks:
-  dockerapi-dev:
-    driver: bridge 
+version: '3.7'
 
 services:
   dockerapi:
@@ -16,22 +12,18 @@ services:
       - "8000:80"     
     environment:
       DB_CONNECTION_STRING: "host=postgres_image;port=5432;database=fleetdb;username=fleetuser;password=fleetpassword"
-    networks:
-      - dockerapi-dev  
   
   postgres_image:
     image: postgres:latest
     ports:
-      - "5432"
+      - "5432:5432"
     restart: always
     volumes:
       - db_volume:/var/lib/postgresql/data
       - ./dbscripts/seed.sql :/docker-entrypoint-initdb.d/seed.sql
     environment:
-      POSTGRES_USER: "bloguser"
-      POSTGRES_PASSWORD: "bloguser"
-      POSTGRES_DB: "blogdb"
-    networks:
-      - dockerapi-dev
+      POSTGRES_USER: "fleetuser"
+      POSTGRES_PASSWORD: "fleetpassword"
+      POSTGRES_DB: "fleetdb"
 volumes:
   db_volume:

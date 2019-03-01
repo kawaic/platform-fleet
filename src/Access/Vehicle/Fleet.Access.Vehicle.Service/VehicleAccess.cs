@@ -5,7 +5,7 @@ using Fleet.Access.Vehicle.Service.Entities;
 
 namespace Fleet.Access.Vehicle.Service
 {
-    public class VehicleAccess
+    public class VehicleAccess : IVehicleAccess
     {
         private readonly VehicleContext context;
         private static readonly IMapper Mapper;
@@ -25,7 +25,7 @@ namespace Fleet.Access.Vehicle.Service
             this.context = context;
         }
 
-        public async Task AddAsync(AddVehicleActivityRequest request)
+        public async Task AddVehicleActivityAsync(AddVehicleActivityRequest request)
         {
             var mapped = Mapper.Map<VehicleActivityStorage>(request.Activity);
             await context.VehicleActivities.AddAsync(mapped);
