@@ -28,7 +28,8 @@ namespace Fleet.Api.Controllers
 
         [HttpPost]
         [Route("add")]
-        public async Task<IActionResult> AddVehicleActivityAsync(Contract.API.Unversioned.AddVehicleActivityRequest apiRequest)
+        public async Task<IActionResult> AddVehicleActivityAsync(
+            [FromBody] Contract.API.Unversioned.AddVehicleActivityRequest apiRequest)
         {
             var request = Mapper.Map<AddVehicleActivityRequest>(apiRequest);
             await this.vehicleAccess.AddVehicleActivityAsync(request).ConfigureAwait(false);
