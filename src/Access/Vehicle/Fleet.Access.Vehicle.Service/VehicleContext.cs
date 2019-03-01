@@ -1,5 +1,4 @@
-﻿using System;
-using Fleet.Access.Vehicle.Service.Entities;
+﻿using Fleet.Access.Vehicle.Service.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Fleet.Access.Vehicle.Service
@@ -10,5 +9,7 @@ namespace Fleet.Access.Vehicle.Service
         public DbSet<VehicleActivityStorage> VehicleActivities { get; set; }
         public DbSet<VehicleActivitySourceStorage> VehicleActivitySources { get; set; }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+            => optionsBuilder.UseNpgsql("Host=localhost;Database=fleetdb;Username=fleetuser;Password=fleetpassword");
     }
 }
