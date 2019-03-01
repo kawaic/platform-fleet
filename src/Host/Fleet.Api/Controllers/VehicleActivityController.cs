@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Fleet.Api.Controllers
 {
     [Route("submissions/api/vehicle-activity")]
+    [ApiController]
     public class VehicleActivityController : ControllerBase
     {
         private readonly IVehicleAccess vehicleAccess;
