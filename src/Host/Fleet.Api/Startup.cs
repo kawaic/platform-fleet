@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Fleet.Access.Vehicle.Interface;
+using Fleet.Access.Vehicle.Service;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -31,6 +33,11 @@ namespace Fleet.Api
             {
                 c.SwaggerDoc("v1", new Info { Title = "Fleet API", Version = "v1" });
             });
+
+            services.AddScoped<IVehicleAccess, VehicleAccess>();
+            services.AddEntityFrameworkNpgsql()
+                .AddDbContext<VehicleContext>()
+                .BuildServiceProvider();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
